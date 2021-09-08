@@ -23,13 +23,13 @@
         this.getOptions();
         this.drawDays();
         var that = this,
-            reset = document.getElementById('reset'),
+
             pre = document.getElementsByClassName('pre-button'),
             next = document.getElementsByClassName('next-button');
             
             pre[0].addEventListener('click', function(){that.preMonth(); });
             next[0].addEventListener('click', function(){that.nextMonth(); });
-            reset.addEventListener('click', function(){that.reset(); });
+
         while(daysLen--) {
             days[daysLen].addEventListener('click', function(){that.clickDay(this); });
         }
@@ -126,14 +126,7 @@
         }
     };
     
-     Calendar.prototype.reset = function() {
-         month = today.getMonth();
-         year = today.getFullYear();
-         day = today.getDate();
-         this.options = undefined;
-         this.drawDays();
-     };
-    
+   
     Calendar.prototype.setCookie = function(name, expiredays){
         if(expiredays) {
             var date = new Date();

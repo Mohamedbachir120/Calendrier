@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
   <head>
-  	<title>Calendar 02</title>
+  	<title>Gestion des RDV</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -12,83 +12,107 @@
 	<link rel="stylesheet" href="css/style.css">
 
 	</head>
-	<body>
+	<body class="bg-white">
 	<section class="ftco-section">
 		<div class="container">
 		
-			<div class="card-body p-3 p-sm-5">
+		<div id="myModal" class="modal column align-items-center">
+			<span class="close">&times;</span>
+
+			<div class="card-body bg-white p-3 p-sm-5 my-3 modal-content">
+				<h5 class="py-3 text-center" id="date_today"></h5>
 				<div class="row text-center mx-0">
-					<div class="col-md-3 col-4 my-1 px-1">
-						<div class="cell spselected shadow-sm py-2 rounded ">08:00</div>
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
+						<div class="cell spselected shadow-sm py-2 rounded">08:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">08:30</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">09:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">09:30</div>
 					</div>
 					
 				</div>
 				<div class="row text-center mx-0">
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">10:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">10:30</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">11:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">11:30</div>
 					</div>
 					
 					
 				</div>
 				<div class="row text-center mx-0">
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">12:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">12:30</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">13:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">13:30</div>
 					</div>
 
 				</div>
 				<div class="row text-center mx-0">
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">14:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">14:30</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">15:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">15:30</div>
 					</div>
 					
 				</div>
 				<div class="row text-center mx-0">
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">16:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">16:30</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">17:00</div>
 					</div>
-					<div class="col-md-3 col-4 my-1 px-1">
+					<div class="col-md-3 col-4 my-2 px-1">
+						<a class="etiquette" href="#"> <i class="fa fa-plus"></i></a>
 						<div class="cell spselected shadow-sm py-2 rounded">17:30</div>
 					</div>
 					
@@ -97,11 +121,12 @@
 					<button class="text-light btn" style="background-color:#39cb75;" onclick="get_horaire()">Valider <i class="fa fa-check"></i> </button>
 				</div>
 			</div>
+		
+		</div>	
 			<div class="row">
 				<div class="col-md-12">
 					<div class="elegant-calencar d-md-flex">
-						<div class="wrap-header d-flex align-items-center">
-				      <p id="reset">reset</p>
+					<div class="wrap-header d-flex align-items-center">
 			        <div id="header" class="p-0">
 		            <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
 		            <div class="head-info">
@@ -183,9 +208,63 @@
 			        </table>
 			      </div>
 			    </div>
+
 				</div>
 			</div>
+			<div class="d-flex flex-row justify-content-center">
+
+			<div class="my-2 p-4 rounded shadow col-md-7">
+				<h4>La signification des couleurs des créneaux:</h4>
+
+				<div class="d-flex flex-row my-2 ">
+					<div class="bg-danger col-md-1" >
+					</div>
+					<p class="text-dark col-md-11">
+						Rendez-vous annulé par le médecin.
+					</p>
+				</div>
+				<div class="d-flex flex-row">
+					<div class="bg-warning col-md-1" >
+					</div>
+					<p class="col-md-11 text-dark">
+						Rendez-vous annulé par le patient.
+					</p>
+				</div>
+				<div class="d-flex flex-row my-2">
+					<div class="bg-info col-md-1" >
+					</div>
+					<p class="col-md-11 text-dark">
+						Rendez-vous  sélectionné.
+					</p>
+				</div>
+				<div class="d-flex flex-row my-2">
+					<div class="col-md-1 bg-dispo" >
+					</div>
+					<p class="col-md-11 text-dark">
+						Rendez-vous  disponible.
+					</p>
+				</div>
+				<div class="d-flex flex-row">
+					<div class="bg-success col-md-1" >
+					</div>
+					<p class="col-md-11 text-dark">
+						Rendez-vous réservé.
+					</p>
+				</div>
+				<div class="d-flex flex-row my-2">
+					<div class="bg-light shadow-sm col-md-1" >
+					</div>
+					<p class="col-md-11 text-dark">
+						Rendez-vous indisponible.
+					</p>
+				</div>
+
+
+			</div>
+
 		</div>
+	</div>
+
 	</section>
 
 	<script src="js/jquery.min.js"></script>
@@ -194,6 +273,28 @@
   <script src="js/main.js"></script>
   <script>
 	  
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal
+	
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+		}
 	  
 	function get_horaire(){
 
@@ -229,6 +330,8 @@
 			day = $(".head-day").eq(0).text();	
 			month =convertisseur[$(".head-month").eq(0).text().split(' ')[0]];
 			year = $(".head-month").eq(0).text().split(' ')[2];
+			modal.style.display = "block";
+			$("#date_today").text("Les Rendez-vous du "+$(event.target).text()+" "+$(".head-month").eq(0).text());	
 			console.log($(event.target).text()+" - "+month+" - "+year);	
 
 			}
@@ -242,6 +345,23 @@
 	});
 	</script>
 	<style>
+		.bg-dispo{
+			background-color: lightgreen;
+		}
+		.etiquette{
+			position: absolute;
+			right: 0;
+			top: 0;
+			color: white !important;
+			margin-top: -10px;
+			margin-right: -2px;
+			background: rgb(71, 71, 71);
+			border-radius: 50%;
+			padding:2px 3px 2px 3px;
+			font-size: 10px;
+			cursor: pointer;
+
+		}
 		.cell  {
 
 			cursor: pointer;
@@ -251,7 +371,45 @@
 			background-color: dodgerblue;
 			color: white;
 		}
-		
+				/* The Modal (background) */
+		.modal {
+		display: none; /* Hidden by default */
+		position: fixed; /* Stay in place */
+		z-index: 1; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 100%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content/Box */
+		.modal-content {
+		background-color: #fefefe;
+		margin: auto ; 
+		margin-top: 5% !important;
+		padding: 20px;
+		border: 1px solid #888;
+		width: 80%; /* Could be more or less, depending on screen size */
+		height: 80%;
+		}
+
+		/* The Close Button */
+		.close {
+		color: #aaa;
+		float: right;
+		font-size: 28px;
+		font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		color: black;
+		text-decoration: none;
+		cursor: pointer;
+		}
 	</style>
 	</body>
 </html>
